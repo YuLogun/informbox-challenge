@@ -1,0 +1,31 @@
+$btn-color: #0075ff;
+$btn-disabled-color: #888888;
+
+@mixin flexSpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  @include flexSpaceBetween();
+  padding: 1em;
+}
+
+.heading {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.btn {
+  @include flexSpaceBetween();
+  border: none;
+  color: $btn-color;
+  background: none;
+  width: 4em;
+}
+
+.btnDisabled {
+  color: $btn-disabled-color;
+}

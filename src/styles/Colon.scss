@@ -1,0 +1,52 @@
+$border-color: 1px solid rgba(0, 0, 0, 0.08);
+
+@mixin flexStart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+  min-width: fit-content;
+  border-top: $border-color;
+}
+
+.colorContainer {
+  @include flexStart();
+}
+
+.checkboxContainer {
+  @include flexStart();
+  padding: 0.25em;
+  border-bottom: $border-color;
+  &:not(:last-of-type) {
+    border-right: $border-color;
+  }
+}
+
+div + .container:last-child * {
+  border-right: none;
+}
+
+.checkbox {
+  margin-right: 0.25em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.number {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.colorName {
+  padding-left: 0.5em;
+}
+
+.colorRect {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
