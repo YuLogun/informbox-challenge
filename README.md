@@ -12,3 +12,20 @@
 - React
 - SCSS
 - Сборка webpack
+
+### Запуск приложения
+
+```
+yarn install
+yarn start
+```
+
+### Запуск билда
+
+```
+yarn build
+```
+
+### Деплой
+
+https://stupefied-hawking-a71c3c.netlify.app/
